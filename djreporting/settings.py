@@ -96,6 +96,16 @@ DATABASES = {
     }
 }
 
+# SSH KEYS
+SSH_PRIVATE_KEY = env('SSH_PRIVATE_KEY')
+
+
+# Database pool configs for remote DB connections
+DB_POOL = {
+    'SIZE': int(env('POOL_SIZE')),
+    'MAX_OVERFLOW': int(env('POOL_MAX_OVERFLOW')),
+    'TIMEOUT': int(env('POOL_TIMEOUT')),
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
