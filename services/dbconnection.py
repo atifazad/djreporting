@@ -8,11 +8,11 @@ class DBConnection(object):
 
 	DB_DRIVERS = (
 
-		('mysql', 'mysql'),
-		('pgsql', 'postgresql'),
-		('oracle', 'oracle'),
-		('mssql', 'mssql'),
-		('sqlite', 'sqlite'),
+		('db_mysql', 'mysql'),
+		('db_pgsql', 'postgresql'),
+		('db_oracle', 'oracle'),
+		('db_mssql', 'mssql'),
+		('db_sqlite', 'sqlite'),
 	)
 
 	def connect(self, drivername, database, host, port=None, username=None, password=None):
